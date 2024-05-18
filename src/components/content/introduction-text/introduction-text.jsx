@@ -3,7 +3,7 @@ import { Box, Heading, Text } from '@chakra-ui/react';
 
 const IntroductionText = () => {
   return (
-    <Box maxW="1170px" mx="auto" px="20px">
+    <Box maxW="1170px" mx="auto" px="20px" mt="70px">
       <Box my="50px">
         <Heading as="h1" fontSize="40px" fontWeight="bold" textAlign="center" color="#333">
           Cursos com certificado
