@@ -17,7 +17,7 @@ const Testimonial = ({ children }: { children: ReactNode }) => {
 const TestimonialContent = ({ children }: { children: ReactNode }) => {
   return (
     <Stack
-      bg={useColorModeValue('white', 'gray.800')}
+      bg={useColorModeValue('#efefef', 'gray.800')}
       boxShadow={'lg'}
       p={8}
       rounded={'xl'}
@@ -87,18 +87,18 @@ const TestimonialAvatar = ({
 
 export default function WithSpeechBubbles() {
   return (
-    <Box bg={useColorModeValue('gray.100', 'gray.700')}>
+    <Box>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
         <Stack spacing={0} align={'center'}>
           <Heading>O que dizem sobre os cursos com certificado:</Heading>
-          <Text>Veja alguns depoimentos de nossos alunos:</Text>
+          <Text color="#999" >Veja alguns depoimentos de nossos alunos:</Text>
         </Stack>
         <Stack
           direction={{ base: 'column', md: 'row' }}
           spacing={{ base: 10, md: 4, lg: 10 }}>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Jane Cooper</TestimonialHeading>
+              <TestimonialHeading>Jane Moura</TestimonialHeading>
               <TestimonialText>
               "Excelente curso, estava desesperada procurando um curso gratuito de Excel, para conseguir uma colocação no mercado e achei esse curso completo."
               </TestimonialText>
@@ -113,9 +113,9 @@ export default function WithSpeechBubbles() {
           </Testimonial>
           <Testimonial>
             <TestimonialContent>
-              <TestimonialHeading>Danielle Oliveira</TestimonialHeading>
+              <TestimonialHeading>Danielle Santos</TestimonialHeading>
               <TestimonialText>
-              "Curso didático e bem do inicio , ensinando desde a base com varias definições de fácil entendimento. A didática é muito simples e bastante intuitiva."
+              "Curso didático e bem do inicio, ensinando desde a base com varias definições de fácil entendimento. A didática é muito simples e bastante intuitiva."
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -130,7 +130,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Jaílson Santos</TestimonialHeading>
               <TestimonialText>
-              "O curso é excelente nos dá oportunidade de crescimento e aprendizagem uma ótima oportunidade para que deseja subir na escada do conhecimento"
+              "O curso é excelente nos dá oportunidade de crescimento e aprendizagem uma boa oportunidade para que deseja subir na escada do conhecimento"
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

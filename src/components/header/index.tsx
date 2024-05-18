@@ -95,7 +95,7 @@ import {
               fontSize={'sm'}
               fontWeight={600}
               color={'white'}
-              bg={'pink.400'}
+              bg={'#48bb78'}
               href={'#'}
               _hover={{
                 bg: 'pink.300',
