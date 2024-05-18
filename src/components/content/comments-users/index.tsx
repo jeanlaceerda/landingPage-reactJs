@@ -74,7 +74,6 @@ const TestimonialAvatar = ({
 }) => {
   return (
     <Flex align={'center'} mt={8} direction={'column'}>
-      {/* <Avatar src={src} alt={name} mb={2} />  */}
       <Stack spacing={-1} align={'center'}>
         <Text fontWeight={600}>{name}</Text>
         <Text fontSize={'sm'} color={useColorModeValue('gray.600', 'gray.400')}>
@@ -100,7 +99,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Jane Moura</TestimonialHeading>
               <TestimonialText>
-              "Excelente curso, estava desesperada procurando um curso gratuito de Excel, para conseguir uma colocação no mercado e achei esse curso completo."
+                "Excelente curso, estava desesperada procurando um curso gratuito de Excel, para conseguir uma colocação no mercado e achei esse curso completo."
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -115,7 +114,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Danielle Santos</TestimonialHeading>
               <TestimonialText>
-              "Curso didático e bem do inicio, ensinando desde a base com varias definições de fácil entendimento. A didática é muito simples e bastante intuitiva."
+                "Curso didático e bem do inicio, ensinando desde a base com varias definições de fácil entendimento. A didática é muito simples e bastante intuitiva."
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar
@@ -130,7 +129,7 @@ export default function WithSpeechBubbles() {
             <TestimonialContent>
               <TestimonialHeading>Jaílson Santos</TestimonialHeading>
               <TestimonialText>
-              "O curso é excelente nos dá oportunidade de crescimento e aprendizagem uma boa oportunidade para que deseja subir na escada do conhecimento"
+                "O curso é excelente nos dá oportunidade de crescimento e aprendizagem uma boa oportunidade para que deseja subir na escada do conhecimento"
               </TestimonialText>
             </TestimonialContent>
             <TestimonialAvatar

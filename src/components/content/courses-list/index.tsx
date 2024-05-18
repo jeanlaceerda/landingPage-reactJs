@@ -54,7 +54,7 @@ const Carrossel = () => {
   const handlePrev = () => {
     setCurrentIndex((prevIndex) => {
       if (prevIndex === 0) {
-        return prevIndex; // Mantém o índice atual se estiver na primeira posição
+        return prevIndex; 
       } else {
         return prevIndex - 1;
       }
@@ -64,7 +64,7 @@ const Carrossel = () => {
   const handleNext = () => {
     setCurrentIndex((prevIndex) => {
       if (prevIndex === cursos.length - 1) {
-        return prevIndex; // Mantém o índice atual se estiver na última posição
+        return prevIndex; 
       } else {
         return prevIndex + 1;
       }
@@ -84,35 +84,35 @@ const Carrossel = () => {
       <Heading as="h1" fontSize="40px" fontWeight="bold" textAlign="center" color="#333">
         Cursos online mais acessados
       </Heading>
-      
+
       <Flex alignItems="center" justifyContent="center" mt="20px">
         <IconButton
           aria-label="Anterior"
           icon={<ChevronLeftIcon />}
           onClick={handlePrev}
-          ml={12} // Espaçamento à direita
+          ml={12} 
         />
         <Flex justifyContent="center" alignItems="center" flexGrow={1}>
           {cursosVisiveis.map((curso, index) => (
             <Box
               key={index}
-              position="relative" // Adicionando posição relativa ao card
+              position="relative" 
               bg="gray.100"
               p={4}
               borderRadius="lg"
               width="290px"
               height="335px"
-              mr={4} // Espaçamento entre os cursos
-              mb={4} // Espaçamento abaixo dos cursos
+              mr={4} 
+              mb={4} 
             >
               <img src="../../../assets/jean.jpeg" style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
               <Text mt={3} mb={7}>{curso.descricao}</Text>
               <Text fontSize="xl" color="#394d60" cursor="pointer" mt={3} fontFamily="Arial, Helvetica, sans-serif">{curso.nome}</Text>
               <Flex alignItems="center" mt={7}>
-                <FaClock size={13} style={{ marginRight: '7px', color: '#2e66b7' }} /> {/* Ícone de tempo */}
+                <FaClock size={13} style={{ marginRight: '7px', color: '#2e66b7' }} /> 
                 <Text style={{ color: '#617385', fontSize: '13px', fontFamily: 'Lato, sans-serif, Arial, helvetica' }}>Duração {curso.duracao}</Text>
               </Flex>
-              <Box position="absolute" bottom={7} > {/* Posicionando o botão no canto inferior direito */}
+              <Box position="absolute" bottom={7} >
                 <Button colorScheme="blue">Inscreva-se Já</Button>
               </Box>
             </Box>
@@ -122,7 +122,7 @@ const Carrossel = () => {
           aria-label="Próximo"
           icon={<ChevronRightIcon />}
           onClick={handleNext}
-          mr={12} // Espaçamento à esquerda
+          mr={12} 
         />
       </Flex>
     </Box>
