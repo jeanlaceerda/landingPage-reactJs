@@ -105,7 +105,7 @@ export default function WithSubnavigation() {
             bg={'#48bb78'}
             href={'#'}
             _hover={{
-              bg: 'pink.300',
+              bg: '#55DC7B',
             }}>
             Cadastrar
           </Button>
