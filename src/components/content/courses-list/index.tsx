@@ -36,7 +36,7 @@ const cursos = [
     imagem: "../../assets/jean.jpeg"
   },
   {
-    description: "Curso / Tecnologia",
+    description: "Curso / Mercado e Vendas",
     name: "Curso de Fotografia Digital para iniciantes",
     duration: "25h",
     imagem: "../../assets/jean.jpeg"
