@@ -88,7 +88,7 @@ export default function WithSpeechBubbles() {
   return (
     <Box>
       <Container maxW={'7xl'} py={16} as={Stack} spacing={12}>
-        <Stack spacing={0} align={'center'}>
+        <Stack spacing={0} align={'center'} mt="20px">
           <Heading>O que dizem sobre os cursos com certificado:</Heading>
           <Text color="#999" >Veja alguns depoimentos de nossos alunos:</Text>
         </Stack>

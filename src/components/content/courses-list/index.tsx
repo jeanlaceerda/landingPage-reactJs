@@ -3,6 +3,7 @@ import { Box, Text, Flex, Input, IconButton, Button, Link, Heading } from '@chak
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { FaClock } from 'react-icons/fa';
 
+
 const cursos = [
   {
     description: "Curso / Tecnologia",
@@ -49,6 +50,7 @@ const cursos = [
 ];
 
 const Carrossel = () => {
+  const [hover, setHover] = React.useState(false);
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const handlePrev = () => {
@@ -107,7 +109,18 @@ const Carrossel = () => {
             >
               <img src="../../../assets/jean.jpeg" style={{ width: '50px', height: '50px', objectFit: 'cover' }} />
               <Text mt={3} mb={7} color="#5c8fd6" fontSize="14px" fontFamily="Lato, sans-serif, Arial, helvetica">{curso.description}</Text>
-              <Text fontSize="xl" color="#394d60" cursor="pointer" mt={3} fontFamily="Arial, Helvetica, sans-serif">{curso.name}</Text>
+              <Text
+      fontSize="xl"
+      color="#394d60"
+      cursor="pointer"
+      mt={3}
+      fontFamily="Arial, Helvetica, sans-serif"
+      style={{ textDecoration: hover ? 'underline' : 'none' }}
+      onMouseEnter={() => setHover(true)}
+      onMouseLeave={() => setHover(false)}
+    >
+      {curso.name}
+    </Text>
               <Flex alignItems="center" mt={7}>
                 <FaClock size={13} style={{ marginRight: '7px', color: '#2e66b7' }} />
                 <Text style={{ color: '#617385', fontSize: '13px', fontFamily: 'Lato, sans-serif, Arial, helvetica' }}>Duração {curso.duration}</Text>
